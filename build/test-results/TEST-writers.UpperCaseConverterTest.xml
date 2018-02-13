@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="rodCutting.UpperCaseConverterTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2016-10-29T04:19:19" hostname="Anudeep" time="0.002">
+  <properties/>
+  <testcase name="writeOnceAndCheckUpperCaseConverter" classname="rodCutting.UpperCaseConverterTest" time="0.0"/>
+  <testcase name="writeTwiceAndCheckUpperCaseConverter" classname="rodCutting.UpperCaseConverterTest" time="0.0"/>
+  <testcase name="callCloseAndCheckUpperCaseConverter" classname="rodCutting.UpperCaseConverterTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

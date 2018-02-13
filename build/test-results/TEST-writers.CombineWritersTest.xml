@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="rodCutting.CombineWritersTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2016-10-29T04:19:19" hostname="Anudeep" time="0.082">
+  <properties/>
+  <testcase name="duplicateRemoverOnUpperCase" classname="rodCutting.CombineWritersTest" time="0.014"/>
+  <testcase name="stupidRemoverOnUpper" classname="rodCutting.CombineWritersTest" time="0.004"/>
+  <testcase name="DuplicateRemoverOnStupidRemoverLowerCase" classname="rodCutting.CombineWritersTest" time="0.004"/>
+  <testcase name="stupidRemoverOnUpperCase" classname="rodCutting.CombineWritersTest" time="0.0"/>
+  <testcase name="DuplicateRemoverOnStupidRemoverUpperCase" classname="rodCutting.CombineWritersTest" time="0.0"/>
+  <testcase name="stupidRemoverOnLowerWithFileWriter" classname="rodCutting.CombineWritersTest" time="0.05"/>
+  <testcase name="duplicateRemoverOnStupidRemover" classname="rodCutting.CombineWritersTest" time="0.0"/>
+  <testcase name="duplicateRemoverOnLowerCase" classname="rodCutting.CombineWritersTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

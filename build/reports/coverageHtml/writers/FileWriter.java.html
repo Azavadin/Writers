@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>FileWriter.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">assign3</a> &gt; <a href="index.source.html" class="el_package">rodCutting</a> &gt; <span class="el_source">FileWriter.java</span></div><h1>FileWriter.java</h1><pre class="source lang-java linenums">package rodCutting;
+
+import java.io.*;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
+public class FileWriter implements WriterInterface {
+
+    java.io.FileWriter fileWriter;
+    private boolean closed;
+    Path path;
+
+<span class="fc" id="L13">    public FileWriter(String file) throws IOException {</span>
+<span class="fc" id="L14">        fileWriter = new java.io.FileWriter(file);</span>
+<span class="fc" id="L15">        path = Paths.get(file);</span>
+<span class="fc" id="L16">    }</span>
+
+    @Override
+    public void write(String string) throws IOException {
+<span class="fc bfc" id="L20" title="All 2 branches covered.">        if (closed == false){</span>
+<span class="fc" id="L21">            fileWriter.write(string);</span>
+<span class="fc" id="L22">            fileWriter.flush();</span>
+        }
+<span class="fc" id="L24">    }</span>
+
+    public void close()
+    {
+<span class="fc" id="L28">        closed = true;</span>
+<span class="fc" id="L29">    }</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.1.201405082137</span></div></body></html>
